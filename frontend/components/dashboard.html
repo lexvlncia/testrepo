@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../styles/auth.css" />
+</head>
+<body>
+
+  <main class="page">
+    <section class="auth-card">
+      <h1>Blank Page</h1>
+      <p id="welcomeText">You are logged in.</p>
+
+      <button id="logoutBtn">Logout</button>
+    </section>
+  </main>
+
+  <script>
+    const loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
+
+    if (!loggedUser) {
+      window.location.href = "dashboard.html";
+    } else {
+      document.getElementById("welcomeText").textContent =
+        `Welcome, ${loggedUser.username}.`;
+    }
+
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+      localStorage.removeItem("loggedUser");
+      window.location.href = "../index.html";
+    });
+  </script>
+
+</body>
+</html>

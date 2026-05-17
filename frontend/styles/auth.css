@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  background: #1f2937;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+p {
+  color: #d1d5db;
+}
+
+form {
+  margin-top: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px 14px;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  outline: none;
+  background: #111827;
+  color: white;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #60a5fa;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 16px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#toggleModeBtn {
+  width: auto;
+  padding: 0;
+  margin-left: 6px;
+  background: transparent;
+  color: #93c5fd;
+}
+
+.toast {
+  display: none;
+  position: absolute;
+  top: -54px;
+  left: 0;
+  right: 0;
+  padding: 13px 16px;
+  border-radius: 12px;
+  background: #ef4444;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+}
+
+.toast.show {
+  display: block;
+}
+
+.toast.success {
+  background: #22c55e;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.68);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-box {
+  width: 100%;
+  max-width: 360px;
+  background: white;
+  color: #111827;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.modal-box h2 {
+  margin-top: 0;
+}
+
+.modal-note {
+  color: #4b5563;
+}
+
+.credential-box {
+  background: #f3f4f6;
+  padding: 14px;
+  border-radius: 14px;
+  margin: 18px 0;
+}
+
+.credential-box p {
+  color: #111827;
+  margin: 8px 0;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+}
+
+.secondary-btn {
+  background: #6b7280;
+}

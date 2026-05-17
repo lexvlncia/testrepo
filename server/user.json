@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "username": "Lex",
+    "usernameKey": "lex",
+    "passwordHash": "scrypt:32768:8:1$ZDJhVVQEdSfAYU6C$f70846e472c86c6ef9be1325593e7f50c6d033a654189deeb604f6a51b8bade0ca67a511b3f2830b31194161ff97d89c6995ad37d2642015a1cbc7fc8e16b988",
+    "role": 1,
+    "registeredDate": "2026-05-18 03:30:08"
+  }
+]

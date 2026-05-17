@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="styles/auth.css" />
+</head>
+<body>
+
+  <main class="page">
+    <section class="auth-card">
+
+      <div id="toast" class="toast"></div>
+
+      <h1 id="formTitle">Login</h1>
+      <p id="formSubtitle">Welcome back. Enter your credentials.</p>
+
+      <form id="authForm">
+        <label>
+          Username
+          <input
+            type="text"
+            id="username"
+            placeholder="3 to 8 characters"
+            minlength="3"
+            maxlength="8"
+            required
+          />
+        </label>
+
+        <label>
+          Password
+          <input
+            type="password"
+            id="password"
+            placeholder="Exactly 8 alphanumeric chars"
+            maxlength="8"
+            required
+          />
+        </label>
+
+        <button type="submit" id="submitBtn">Login</button>
+      </form>
+
+      <p class="toggle-text">
+        <span id="toggleQuestion">No account yet?</span>
+        <button type="button" id="toggleModeBtn">Register</button>
+      </p>
+
+    </section>
+  </main>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-box">
+      <h2 id="modalTitle">Confirm Login</h2>
+      <p class="modal-note">Please confirm the credentials below.</p>
+
+      <div class="credential-box">
+        <p><strong>Username:</strong> <span id="confirmUsername"></span></p>
+        <p><strong>Password:</strong> <span id="confirmPassword"></span></p>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" id="cancelConfirmBtn" class="secondary-btn">Cancel</button>
+        <button type="button" id="confirmBtn">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/auth.js"></script>
+</body>
+</html>
